@@ -1,0 +1,185 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(239, 239, 239, 0.817);
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.volvo-logo {
+    width: 105px;
+    margin-left: 15px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    margin-left: 50px;
+    transition: 0.3s;
+}
+
+li {
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: 800;
+}
+
+li:hover {
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.log-in {
+    display: flex;
+    justify-content: center;
+}
+
+.log-in img {
+    width: 16px;
+}
+
+.button {
+    padding: 8px;
+    font-size: medium;
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.search {
+    border-radius: 150%;
+    padding: 10px;
+}
+
+.search:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.log-in a {
+    text-decoration: none;
+    align-self: center;
+}
+
+.header {
+    background-image: url(https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blt84af0b0f4c7ad4f2/66d7e4dabe0a562a6c9cf24e/xc90-phev-hero-21x9-desktop.jpg?branch=prod_alias&auto=webp&iar=0&w=1920&imdensity=1), 
+    linear-gradient(rgba(0, 0, 0, 0.304), rgba(0, 0, 0, 0.317));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    padding-top: 42.86%;
+    background-blend-mode: darken;
+    margin-top: 68px;
+}
+
+.text-box{
+    position: absolute;
+    right: 30px; 
+    bottom: 20px;
+    color: white;
+    text-align: right;
+    font-family: sans-serif;
+    line-height: 55px;
+    margin-bottom: 5%;
+    margin-right: 4%;
+}
+
+.text-box h1 {
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+
+.text-box h3 {
+    font-size: 95%;
+    margin-right: 5px;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 10%;
+    gap: 15vh;
+} 
+
+.top-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5em;
+} 
+
+.top-links img {
+    width: 2.5vh;
+    margin-left: 2vh;
+}
+
+.top-links .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.top-links section {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    padding: 2%;
+    width: 25%;
+    transition: 0.3s;
+    flex-shrink: 0;
+} 
+
+.top-links section:hover {
+    background-color: #e1e1e1;
+}
