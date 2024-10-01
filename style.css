@@ -340,5 +340,16 @@ footer li:hover {
 
 .social-media img {
     width: 4vh;
+    margin: 1rem;
 }
 
+.info-list{
+    font-size: smaller;
+    color: grey;
+}
+
+.copyright {
+    display: flex;
+    font-size: smaller;
+    color: grey;
+}
