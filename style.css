@@ -11,6 +11,8 @@ body {
     background-color: white;
 }
 
+/* Nav */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -41,13 +43,13 @@ ul{
     transition: 0.3s;
 }
 
-li {
+.nav li {
     box-sizing: border-box;
     padding: 10px;
     font-weight: 800;
 }
 
-li:hover {
+.nav li:hover {
     background-color: rgb(225, 225, 225);
     border-radius: 5px;
 }
@@ -88,6 +90,8 @@ li:hover {
     text-decoration: none;
     align-self: center;
 }
+
+/* Header */
 
 .header {
     background-image: url(https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blt84af0b0f4c7ad4f2/66d7e4dabe0a562a6c9cf24e/xc90-phev-hero-21x9-desktop.jpg?branch=prod_alias&auto=webp&iar=0&w=1920&imdensity=1), 
@@ -143,19 +147,33 @@ li:hover {
     background-color: rgb(201, 201, 201);
 }
 
+/* Main */
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5% 10%;
     gap: 15vh;
-} 
+}
+
+h2 {
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: medium;
+}
+
+/* Main top */
 
 .top-links {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5em;
+    padding: 4em;
 } 
 
 .top-links img {
@@ -163,23 +181,164 @@ main {
     margin-left: 2vh;
 }
 
+.top-links p {
+    color: grey;
+    font-size: small;
+    line-height: 180%;
+    margin-bottom: 0.5rem;
+}
+
 .top-links .title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
+    margin-top: 0.5rem;
 }
 
 .top-links section {
-    background-color: #ffffff;
+    background-color: #f4f4f4d0;
     display: flex;
     flex-direction: column;
     width: 50vh;
-    padding: 2%;
-    width: 25%;
+    padding: 1em;
     transition: 0.3s;
-    flex-shrink: 0;
+    margin-right: 2rem;
 } 
 
 .top-links section:hover {
     background-color: #e1e1e1;
 }
+
+/* Main bottom */
+
+.bottom-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2vh;
+    padding: 2rem;
+}
+
+.bottom-links section {
+    flex-direction: column;
+    width: 50%;
+    height: 70vh;
+    padding: 1em;
+    object-fit: contain;
+}
+
+.bottom-links img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    margin-bottom: 4vh;
+}
+
+.bottom-links p {
+    line-height: 2em;
+    margin-top: 2vh;
+    color: grey;
+}
+
+.utforska {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.utforska a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.utforska a:hover {
+    text-decoration: underline black;
+}
+
+.utforska img {
+    width: 1.3vh;
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+}
+
+/* Till toppen */
+
+.till-toppen-button {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 2em;
+}
+
+.till-toppen-button img {
+    width: 2.8vh;
+    margin-left: 0.8vh;
+}
+
+.till-toppen-button p a {
+    all: unset;
+}
+
+.till-toppen-button p:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fafafa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.footer-menu {
+    text-transform: uppercase;
+    font-size: small;
+    display: flex;
+    align-items: flex-start;
+    gap: 7vh;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+}
+
+.list p {
+    font-size: smaller;
+    color: grey;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+.contact {
+    justify-content: center;
+}
+
+.location {
+    display: flex;
+}
+
+.location img {
+    width: 2vh;
+    margin-right: 1vh;
+}
+
+.social-media img {
+    width: 4vh;
+}
+
